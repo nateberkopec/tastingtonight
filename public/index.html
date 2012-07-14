@@ -10,6 +10,10 @@
 <body> 
 
 <div data-role="page" id="one" data-theme="a">
+  <div data-role="header">
+    <h1>TastingTonight</h1>
+  </div><!-- /header -->
+
   <div data-role="content" >  
     <h2>TastingTonight</h2>
     
@@ -31,29 +35,73 @@
 
   <div data-role="content" data-theme="a">  
     <h2>Choose Your Tasting Package</h2>
-    <a href="foo.html" data-role="button" data-rel="dialog">Craft Beers</a>
-    <a href="foo.html" data-role="button" data-rel="dialog">Wines</a>
-    <a href="foo.html" data-role="button" data-rel="dialog">Scotches</a>
+    <p><a href="#beer" data-role="button">Craft Beers</a></p>
+    <p><a href="#wine" data-role="button">Wines</a></p>
+    <p><a href="#scotch" data-role="button">Scotches</a></p>
   </div><!-- /content -->
 </div><!-- /page two -->
 
-
-<!-- Start of third page: #popup -->
-<div data-role="page" id="popup">
+<div data-role="page" id="beer">
 
   <div data-role="header" data-theme="e">
-    <h1>Dialog</h1>
+    <h1>Craft Beer Package</h1>
   </div><!-- /header -->
 
-  <div data-role="content" data-theme="d">  
-    <h2>Popup</h2>
-    <p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>    
-    <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p> 
+  <div data-role="content" data-theme="a">  
+    <h2>Choose Package Size</h2>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerOne" data-role="button">1</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerTwo" data-role="button">2</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerThree" data-role="button">3</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerFour" data-role="button">4</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerFive" data-role="button">5</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerSix" data-role="button">6</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerSeven" data-role="button">7</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerEight" data-role="button">8</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerSPECIAL" data-role="button">Custom/Other</a></p>
   </div><!-- /content -->
-  
-  <div data-role="footer">
-    <h4>Page Footer</h4>
-  </div><!-- /footer -->
-</div><!-- /page popup -->
+
+</div>
+
+<div data-role="page" id="wine">
+
+  <div data-role="header" data-theme="e">
+    <h1>Fine Wines Package</h1>
+  </div><!-- /header -->
+
+  <div data-role="content" data-theme="a">  
+    <h2>Choose Package Size</h2>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineOne" data-role="button">1</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineTwo" data-role="button">2</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineThree" data-role="button">3</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineFour" data-role="button">4</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineFive" data-role="button">5</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineSix" data-role="button">6</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineSeven" data-role="button">7</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineEight" data-role="button">8</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineSPECIAL" data-role="button">Custom/Other</a></p>
+  </div><!-- /content -->
+
+</div>
+
+<div data-role="page" id="scotch">
+
+  <div data-role="header" data-theme="e">
+    <h1>Scotches Package</h1>
+  </div><!-- /header -->
+
+  <div data-role="content" data-theme="a">  
+    <h2>Choose Package Size</h2>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchOne" data-role="button">1</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchTwo" data-role="button">2</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchThree" data-role="button">3</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchFour" data-role="button">4</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchFive" data-role="button">5</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchSix" data-role="button">6</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchSeven" data-role="button">7</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchEight" data-role="button">8</a></p>
+    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchSPECIAL" data-role="button">Custom/Other</a></p>
+  </div><!-- /content -->
+
+</div>
 
 </body>
