@@ -1,14 +1,14 @@
+require 'rack/contrib'
+require 'rack-rewrite'
+
 use Rack::Static, 
   :urls => ["/css", "/img"],
   :root => "public"
 
-run lambda { |env|
-  [
-    200, 
-    {
-      'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=86400' 
-    },
-    File.open('public/index.html', File::RDONLY)
-  ]
-}
+
+use Rack::Rewrite do
+  rewrite '/', '/index.html'
+  rewrite '/cell', '/cell.html'
+end
+
+run Rack::Directory.new('public')
