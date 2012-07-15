@@ -1,110 +1,25 @@
 <!DOCTYPE html> 
 <html> 
   <head> 
-  <title>TastingTonight</title> 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
-  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-  <style type="text/css">
-    h1 {
-        text-align: center;
-        font-size: 18px;
-    }
-  </style>
-</head> 
-<body> 
-
-<div data-role="page" id="one" data-theme="a">
-  <div data-role="header">
-    <div>
-      <h1>TastingTonight</h1>
+    <title>TastingTonight</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="http://use.typekit.com/syk5cxs.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <h1 class="tk-adobe-garamond-pro">TastingTonight</h1>
+        <img src="img/heroimage.jpg" />
+      </div>
+      <div class="main_explainer">
+      </div>
+      <div class="benefit_columns">
+      </div>
+      <div class="cta">
+      </div>
     </div>
-  </div><!-- /header -->
 
-  <div data-role="content" >  
-    
-    <p>Welcome to TastingTonight! You're just an hour away from getting a professionally curated tasting box delivered to your place in NYC.</p> 
-
-    <h3>Let's get started:</h3>
-    <p><a href="#two" data-role="button">Choose Package</a></p>  
-  </div><!-- /content -->
-  
-</div><!-- /page one -->
-
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="two" data-theme="a">
-
-  <div data-role="header">
-    <h1>Choose Package</h1>
-  </div><!-- /header -->
-
-  <div data-role="content" data-theme="a">  
-    <h2>Choose Your Tasting Package</h2>
-    <p><a href="#beer" data-role="button">Craft Beers</a></p>
-    <p><a href="#wine" data-role="button">Wines</a></p>
-    <p><a href="#scotch" data-role="button">Scotches</a></p>
-  </div><!-- /content -->
-</div><!-- /page two -->
-
-<div data-role="page" id="beer">
-
-  <div data-role="header" data-theme="a">
-    <div>
-      <h1>Craft Beer Package</h1>
-    </div>
-  </div><!-- /header -->
-
-  <div data-role="content" data-theme="a">  
-    <h2>Choose Package Size</h2>
-    <h3>You'll receive 5 different beers with this package</h3>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerTwo" data-role="button">2 people - $25 <br> (equiv to 5 beers)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerThree" data-role="button">3 people - $37 <br> (equiv to 7.5 beers)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerFour" data-role="button">4 people - $50 <br>(equiv to 10 beers)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerFive" data-role="button">5 people - $63 <br>(equiv to 12.5 beers)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerSix" data-role="button">6 people - $75 <br>(equiv to 15 beers)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerSeven" data-role="button">7 people - $87 <br>(equiv to 17.5 beers)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerEight" data-role="button">8 people - $100 <br>(equiv to 20 beers)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=CraftBeerSPECIAL" data-role="button">Custom/Other <br>($8 pp)</a></p>
-  </div><!-- /content -->
-
-</div>
-
-<div data-role="page" id="wine">
-
-  <div data-role="header" data-theme="a">
-    <div>
-      <h1>Fine Wines Package</h1>
-    </div>
-  </div><!-- /header -->
-
-  <div data-role="content" data-theme="a">  
-    <h2>Choose Package Size</h2>
-    <h3>You'll receive 5 different wines with this package</h3>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineTwoThree" data-role="button">2-4 people - $50 <br>(equiv to 2.5 bottles)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineFiveEight" data-role="button">5-8 people - $100 <br>(equiv to 5 bottles)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=WineSPECIAL" data-role="button">Custom/Other</a></p>
-  </div><!-- /content -->
-
-</div>
-
-<div data-role="page" id="scotch">
-
-  <div data-role="header" data-theme="a">
-    <div>
-      <h1>Scotch Package</h1>
-    </div>
-  </div><!-- /header -->
-
-  <div data-role="content" data-theme="a">  
-    <h2>Choose Package Size</h2>
-    <h3>You'll receive 5 different scotches with this package</h3>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchThree" data-role="button">3 persons - $65 <br>(equiv to 1 full bottle)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchSix" data-role="button">6 persons - $125 <br>(equiv to 2 full bottles)</a></p>
-    <p><a href="mailto: nate.berkopec@gmail.com?subject=ScotchSPECIAL" data-role="button">Custom/Other</a></p>
-  </div><!-- /content -->
-
-</div>
-
-</body>
+  </body>
+</html>

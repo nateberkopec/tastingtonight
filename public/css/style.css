@@ -1,0 +1,17 @@
+body {
+  font: 'Adobe Garamond Pro';
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-weight: normal;
+  font-size: 64px;
+}
+
+.hero img {
+  
+}
