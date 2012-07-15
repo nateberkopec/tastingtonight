@@ -1,5 +1,10 @@
 body {
   font: 'Adobe Garamond Pro';
+  color: #222;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
 }
 
 .container {
@@ -10,8 +15,62 @@ body {
 .hero h1 {
   font-weight: normal;
   font-size: 64px;
+  margin: 50px 0px 0 0;
+}
+
+hr {
+  color: #BBB;
+  width: 90%;
+  margin: 30px;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #DDD;
+}
+
+.package_columns h2, .cta h2 {
+  font-size: 48px;
+  margin: 10px;
+  text-align: center;
+}
+
+
+h3 {
+  font-weight: normal;
+  font-size: 28px;
+  text-align: center;
+}
+
+h4 {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #AAA;
+  margin: 0px 2px 30px;
+}
+h5 {
+  font-weight: normal;
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+ul li {
+  font-size: 18px;
 }
 
 .hero img {
-  
+
+}
+
+.third {
+  width: 31%;
+  float: left;
+  padding: 5px;
+}
+
+.third h3 {
+  margin: 10px 0;
+}
+
+.third h4 {
+  margin: 0;
 }
