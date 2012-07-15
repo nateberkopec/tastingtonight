@@ -77,14 +77,30 @@
         <h2>Now Taking Orders for Next Weekend: July 20-22</h2>
         <h3>Delivery anywhere in NYC. With video tasting notes, glasses included,
           and five incredible selections: how can you go wrong?</h3>
-          <form>
-            First name: <input type="text" name="firstname" /><br />
+          <div class="form">
+          <form action="email" method="get">
+            First name: <input type="text" name="firstname" />
             Last name: <input type="text" name="lastname" />
-            Address: <input type="text" name="lastname" />
-            Package Choice: <input type="text" name="lastname" />
-            Delivery Date: <input type="text" name="lastname" />
-            Delivery Time: <input type="text" name="lastname" />
-            Special Request and Instructions: <input type="text" name="lastname" />
+            Address: <input type="text" name="address" />
+            Package Choice: <select name="package">
+                            <option value="scotch23">Scotch (2-3 person) - $65</option>
+                            <option value="scotch46">Scotch (5-8 person) - $120</option>
+                            <option value="wine23">Wine (2-4 p.) - $50</option>
+                            <option value="wine46">Wine (5-8 p.) - $100</option>
+                            <option value="beer23">Craft Beer (2-3 p.) - $25</option>
+                            <option value="beer46">Craft Beer (4-6 p.) - $50</option>
+                            </select>
+            Delivery Date: <select name="date">
+                            <option value="fri">Fri July 20</option>
+                            <option value="sat">Sat July 21</option>
+                            <option value="sun">Sun July 22</option>
+                            </select>
+            Size of Party: <input type="text" name="time" />
+            Delivery Time: <input type="text" name="time" />
+            Phone Number: <input type="text" name="phone" />
+            Special Requests and Instructions: <textarea name="special" rows="5"></textarea>
+            <input type="submit" />
+          </div class="form">
           </form>
       </div>
     </div>
